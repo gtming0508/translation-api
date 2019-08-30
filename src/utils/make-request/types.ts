@@ -6,7 +6,7 @@ export interface RequestOptions {
   query?: ParsedUrlQuery
   method?: 'get' | 'post'
   body?: ParsedUrlQueryInput
-  type?: 'form' | 'json'
+  type?: 'form' | 'json'   
   headers?: StringObject
   responseType?: 'document' | 'json' | 'text'
 }

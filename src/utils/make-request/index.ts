@@ -42,8 +42,7 @@ export default function (options: RequestOptions): Promise<any> {
     Object.assign(headers, options.headers)
     let agent = null
     if ((<any>global).translateProxyUrl) {
-        // agent = new httpProxyAgent((<any>global).translateProxyUrl);
-        agent = new httpProxyAgent('http://tangxuecheng881:Txiaomi258417..@10.37.84.119:8080');
+        agent = new httpProxyAgent((<any>global).translateProxyUrl);
     }
     console.log('agent: ', agent);
     const httpOptions = {
